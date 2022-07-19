@@ -1,0 +1,62 @@
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+
+{
+    "username": "ducnam4298",
+    "password": "root@123"
+}
+
+###
+POST http://localhost:8080/api/auth/signin
+Content-Type: application/json
+
+{
+    "username": "ducnam4298",
+    "password": "root@123"
+}
+
+###
+GET  http://localhost:8080/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+
+###
+GET  http://localhost:8080/api/post/62d6709644cd4031455afb30
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+
+###
+POST http://localhost:8080/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+
+# {
+#     "title": "React",
+#     "description": "Server Side Rendering",
+#     "url": "reactjs.org",
+#     "status": 2
+# }
+
+{
+    "title": "Nodejs",
+    "description": "Server Side Rendering",
+    "url": "nodejs.org",
+    "status": 2
+}
+
+###
+PUT   http://localhost:8080/api/post/62d670a044cd4031455afb32
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+
+{
+    "title": "Nodejs",
+    "description": "Server Side Rendering",
+    "url": "nodejs.org",
+    "status": 1
+}
+
+###
+DELETE   http://localhost:8080/api/post/62d67381dc952d4928868a8d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
