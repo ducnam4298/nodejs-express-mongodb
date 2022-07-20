@@ -1,37 +1,21 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-export enum PostStatus {
-  TOLEARN,
-  LEARNING,
-  LEARNED
-}
-
-export interface Post extends Document {
-  title: string;
-  description?: string;
-  status?: number;
+export interface Token extends Document{
+  accessToken: string;
+  refreshToken: string;
   user: Schema.Types.ObjectId;
   createdAt: Date;
   updatedAt: Date;
 }
 
 const PostSchema = new Schema({
-  title: {
+  accessToken: {
     type: String,
     required: true
   },
-  description: {
-    type: String,
-    required: false
-  },
-  url: {
+  refreshToken: {
     type: String,
     required: true
-  },
-  status: {
-    type: Number,
-    enum: [PostStatus.TOLEARN, PostStatus.LEARNING, PostStatus.LEARNED],
-    required: false,
   },
   user: {
     type: Schema.Types.ObjectId,
@@ -47,4 +31,4 @@ const PostSchema = new Schema({
   }
 });
 
-export default mongoose.model('posts', PostSchema);
+export default mongoose.model('tokens', PostSchema);

@@ -1,8 +1,15 @@
-import mongoose from 'mongoose';
+import mongoose, { Document } from 'mongoose';
+import { UnparsedSourceText } from 'typescript';
 
 const Schema = mongoose.Schema;
+export interface User extends Document {
+  username: string;
+  password: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
 
-const UserSchema = new Schema({
+const UserSchema = new Schema<User>({
   username: {
     type: String,
     required: true,
@@ -22,4 +29,4 @@ const UserSchema = new Schema({
   }
 });
 
-export = mongoose.model('users', UserSchema);
+export default mongoose.model<User>('users', UserSchema);

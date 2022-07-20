@@ -1,34 +1,73 @@
-POST http://localhost:8080/api/auth/signup
+###
+POST http://localhost:9898/api/auth/register
 Content-Type: application/json
 
 {
     "username": "ducnam4298",
     "password": "root@123"
+}
+
+# {
+#     "username": "nate4298",
+#     "password": "root@123"
+# }
+
+###
+POST http://localhost:9898/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "ducnam4298",
+    "password": "root@123"
+}
+
+# {
+#     "username": "nate4298",
+#     "password": "root@123"
+# }
+
+###
+POST http://localhost:9898/api/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2ZjMGQxYWNjYjBlNjlkZGQzNDUiLCJpYXQiOjE2NTgzMTE5MTUsImV4cCI6MTY1ODMxMTk3NX0.DbCSFlobrTudrZssSS4H197R2_52cbKBrdcOFL2mHro
+
+###
+POST   http://localhost:9898/api/auth/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2Y4ODY2YTRjOGRlMzg2YTkyMDkiLCJpYXQiOjE2NTgzMTA5ODYsImV4cCI6MTY1ODMxNDU4Nn0.fn0Fg0LtWImijoj_H4s9SGIvC9JyJh3ilm9J54M2TL0"
 }
 
 ###
-POST http://localhost:8080/api/auth/signin
+GET  http://localhost:8080/api/user
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2Y4ODY2YTRjOGRlMzg2YTkyMDkiLCJpYXQiOjE2NTgzMTA5ODYsImV4cCI6MTY1ODMxMTAxNn0.76CA6mcMSv-xYyrAkixNr-Wo--CKMBYjPhVaoIWMsp4
 
-{
-    "username": "ducnam4298",
-    "password": "root@123"
-}
+###
+GET  http://localhost:8080/api/user/62d695e768f48f06bcc4d12e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2Y4ODY2YTRjOGRlMzg2YTkyMDkiLCJpYXQiOjE2NTgzMTA5NDgsImV4cCI6MTY1ODMxMDk3OH0.Q0uosPvaVmX9vUlCcRHIfyrm_PQmUGP7eLQ4EH5s9LQ
+
+###
+GET  http://localhost:8080/api/user/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2OTVlNzY4ZjQ4ZjA2YmNjNGQxMmUiLCJpYXQiOjE2NTgzMDkwNTksImV4cCI6MTY1ODMwOTExOX0.iw-lE6aQTTaaPtiIrRArW4kZ1sdhjwAJNib_TkrVReo
 
 ###
 GET  http://localhost:8080/api/post
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2Y4ODY2YTRjOGRlMzg2YTkyMDkiLCJpYXQiOjE2NTgzMTE0NzMsImV4cCI6MTY1ODMxMTUzM30.rgHGB30wmGf42Vd7Z8x8nx24Bz7-7nloX67NndTTLEk
 
 ###
-GET  http://localhost:8080/api/post/62d6709644cd4031455afb30
+GET  http://localhost:8080/api/post/62d6961e29fe9d519ccc8c93
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2OTVlNzY4ZjQ4ZjA2YmNjNGQxMmUiLCJpYXQiOjE2NTgzMDkwNTksImV4cCI6MTY1ODMwOTExOX0.iw-lE6aQTTaaPtiIrRArW4kZ1sdhjwAJNib_TkrVReo
 
 ###
 POST http://localhost:8080/api/post
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3Y2Y4ODY2YTRjOGRlMzg2YTkyMDkiLCJpYXQiOjE2NTgzMTE0NzMsImV4cCI6MTY1ODMxMTUzM30.rgHGB30wmGf42Vd7Z8x8nx24Bz7-7nloX67NndTTLEk
 
 # {
 #     "title": "React",
@@ -41,13 +80,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2N
     "title": "Nodejs",
     "description": "Server Side Rendering",
     "url": "nodejs.org",
-    "status": 2
+    "status": 1
 }
 
 ###
 PUT   http://localhost:8080/api/post/62d670a044cd4031455afb32
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2OTVlNzY4ZjQ4ZjA2YmNjNGQxMmUiLCJpYXQiOjE2NTgzMDkwNTksImV4cCI6MTY1ODMwOTExOX0.iw-lE6aQTTaaPtiIrRArW4kZ1sdhjwAJNib_TkrVReo
 
 {
     "title": "Nodejs",
@@ -59,4 +98,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2N
 ###
 DELETE   http://localhost:8080/api/post/62d67381dc952d4928868a8d
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2NjhkMzA0M2Q1OWFhYzM1MDAyN2YiLCJpYXQiOjE2NTgyMTg3MTN9.tckkScWhGbuYcJ-7emeQJckaupeDQ5JGwcEsnnbYP-8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ2OTVlNzY4ZjQ4ZjA2YmNjNGQxMmUiLCJpYXQiOjE2NTgzMDkwNTksImV4cCI6MTY1ODMwOTExOX0.iw-lE6aQTTaaPtiIrRArW4kZ1sdhjwAJNib_TkrVReo
