@@ -60,7 +60,7 @@ Content-Type: application/json
 Authorization: Bearer "copy paste accessToken from api/auth/login"
 
 ###
-GET  http://localhost:8080/api/post/62d6961e29fe9d519ccc8c93
+GET  http://localhost:8080/api/post/62d7d3428b8eec6ed686e67f
 Content-Type: application/json
 Authorization: Bearer "copy paste accessToken from api/auth/login"
 
@@ -80,7 +80,7 @@ Authorization: Bearer "copy paste accessToken from api/auth/login"
 #     "title": "Nodejs",
 #     "description": "Server Side Rendering",
 #     "url": "nodejs.org",
-#     "status": 1
+#     "status": 2
 # }
 
 {
@@ -99,7 +99,7 @@ Authorization: Bearer "copy paste accessToken from api/auth/login"
     "title": "Nodejs",
     "description": "Server Side Rendering",
     "url": "nodejs.org",
-    "status": 1
+    "status": 2
 }
 
 ###
