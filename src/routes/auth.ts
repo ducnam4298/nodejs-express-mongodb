@@ -100,7 +100,7 @@ router.post('/token', async (req, res, next) => {
 const generateToken = (payload: any) => {
   if (process.env.ACCESS_TOKEN_SECRET && process.env.REFRESH_TOKEN_SECRET) {
     const accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, {
-      expiresIn: '1m'
+      expiresIn: '30m'
     });
     const refreshToken = jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, {
       expiresIn: '1h'
