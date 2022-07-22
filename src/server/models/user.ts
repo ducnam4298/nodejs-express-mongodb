@@ -1,5 +1,4 @@
 import mongoose, { Document } from 'mongoose';
-import { UnparsedSourceText } from 'typescript';
 
 const Schema = mongoose.Schema;
 export interface User extends Document {

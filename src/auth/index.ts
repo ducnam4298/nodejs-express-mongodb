@@ -1,6 +1,6 @@
 import express from 'express';
-import connection from './config/connection';
-import dotenv from './config/dotenv';
+import connection from '../config/connection';
+import dotenv from '../config/dotenv';
 import authRouter from './routes/auth';
 import tokenRouter from './routes/token';
 

@@ -1,7 +1,8 @@
 import express from 'express';
-import connection from './config/connection';
+import connection from '../config/connection';
 import postRouter from './routes/post';
 import userRouter from './routes/user';
+
 connection();
 
 const PORT = 8080;
