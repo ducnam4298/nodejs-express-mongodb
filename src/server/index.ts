@@ -1,8 +1,10 @@
 import express from 'express';
 import connection from '../config/connection';
+import dotenv from '../config/dotenv';
 import postRouter from './routes/post';
 import userRouter from './routes/user';
 
+dotenv();
 connection();
 
 const PORT = 8080;
