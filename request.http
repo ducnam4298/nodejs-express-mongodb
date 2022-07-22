@@ -1,5 +1,5 @@
 ###
-POST http://localhost:9898/api/auth/register
+POST http://localhost:8081/api/auth/register
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 # }
 
 ###
-POST http://localhost:9898/api/auth/login
+POST http://localhost:8081/api/auth/login
 Content-Type: application/json
 
 {
@@ -27,12 +27,12 @@ Content-Type: application/json
 # }
 
 ###
-POST http://localhost:9898/api/auth/logout
+POST http://localhost:8081/api/auth/logout
 Content-Type: application/json
 Authorization: Bearer "copy paste accessToken from api/auth/login"
 
 ###
-POST   http://localhost:9898/api/auth/token
+POST   http://localhost:8081/api/auth/token
 Content-Type: application/json
 
 {
