@@ -7,7 +7,7 @@ import tokenRouter from './routes/token';
 dotenv();
 connection();
 
-const PORT = 8081;
+const PORT = process.env.PORT || 8081;
 
 const app = express();
 app.use(express.json());

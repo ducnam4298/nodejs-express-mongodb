@@ -7,7 +7,7 @@ import fileRouter from './routes/file';
 dotenv();
 connection();
 
-const PORT = 8082;
+const PORT = process.env.PORT || 8082;
 const __basedir = __dirname;
 global.__dirname = __basedir;
 var corsOptions = {
