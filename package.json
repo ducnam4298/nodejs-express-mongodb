@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "build": "rm -rf build/ && prettier --write src/ && tsc",
-    "server": "ts-node-dev src/server/index.ts",
-    "auth": "ts-node-dev src/auth/index.ts",
-    "file": "ts-node-dev src/file/index.ts",
-    "dev": "ts-node-dev src/index.ts",
-    "prod-server": "node src/server/index.ts",
-    "prod-auth": "node src/auth/index.ts",
-    "prod-file": "node src/file/index.ts"
+    "server": "ts-node-dev server/index.ts",
+    "auth": "ts-node-dev auth/index.ts",
+    "file": "ts-node-dev file/index.ts",
+    "dev": "ts-node-dev index.ts",
+    "prod-server": "node server/index.ts",
+    "prod-auth": "node auth/index.ts",
+    "prod-file": "node file/index.ts"
   },
   "license": "MIT",
   "type": "commonjs",
