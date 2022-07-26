@@ -1,1 +1,1 @@
-web: yarn prod-auth && yarn prod-server && yarn prod-file
+web: sh -c yarn prod-auth && yarn prod-server && yarn prod-file
