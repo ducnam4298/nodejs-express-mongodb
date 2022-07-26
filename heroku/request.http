@@ -1,0 +1,108 @@
+###
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "ducnam4298",
+    "password": "root@123"
+}
+
+# {
+#     "username": "nate4298",
+#     "password": "root@123"
+# }
+
+###
+POST http://localhost:8081/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "ducnam4298",
+    "password": "root@123"
+}
+
+# {
+#     "username": "nate4298",
+#     "password": "root@123"
+# }
+
+###
+POST http://localhost:8081/api/auth/logout
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+POST   http://localhost:8081/api/auth/token
+Content-Type: application/json
+
+{
+    "refreshToken": "copy paste refreshToken from api/auth/login"
+}
+
+###
+GET  http://localhost:8080/api/user
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+GET  http://localhost:8080/api/user/62d695e768f48f06bcc4d12e
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+GET  http://localhost:8080/api/user/profile
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+GET  http://localhost:8080/api/post
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+GET  http://localhost:8080/api/post/62d7d3428b8eec6ed686e67f
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+###
+POST http://localhost:8080/api/post
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+# {
+#     "title": "React",
+#     "description": "Server Side Rendering",
+#     "url": "reactjs.org",
+#     "status": 2
+# }
+
+# {
+#     "title": "Nodejs",
+#     "description": "Server Side Rendering",
+#     "url": "nodejs.org",
+#     "status": 2
+# }
+
+{
+    "title": "Nextjs",
+    "description": "Server Side Rendering",
+    "url": "nextjs.org",
+    "status": 1
+}
+
+###
+PUT   http://localhost:8080/api/post/62d670a044cd4031455afb32
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
+
+{
+    "title": "Nodejs",
+    "description": "Server Side Rendering",
+    "url": "nodejs.org",
+    "status": 2
+}
+
+###
+DELETE   http://localhost:8080/api/post/62d67381dc952d4928868a8d
+Content-Type: application/json
+Authorization: Bearer "copy paste accessToken from api/auth/login"
