@@ -1,1 +1,1 @@
-web: yarn prod-server
+web: yarn prod-auth && yarn prod-server && yarn prod-file
