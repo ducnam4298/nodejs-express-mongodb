@@ -7,6 +7,7 @@
     "server": "ts-node-dev src/server/index.ts",
     "auth": "ts-node-dev src/auth/index.ts",
     "file": "ts-node-dev src/file/index.ts",
+    "dev": "ts-node-dev src/index.ts",
     "prod-server": "node src/server/index.ts",
     "prod-auth": "node src/auth/index.ts",
     "prod-file": "node src/file/index.ts"
