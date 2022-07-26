@@ -1,8 +1,8 @@
 import express from 'express';
 import fs from 'fs';
-import { verifyToken } from '../../middleware/auth';
-import uploadFile from '../../middleware/uploadFile';
-import Constants from '../../file/constants';
+import { verifyToken } from 'middleware/auth';
+import uploadFile from 'middleware/uploadFile';
+import Constants from 'file/constants';
 
 const router = express.Router();
 
