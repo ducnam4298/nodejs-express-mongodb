@@ -1,12 +1,9 @@
 import { hash, verify } from 'argon2';
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import MUser from 'server/models/user';
+import MUser from '../../server/models/user';
 import MToken from '../models/token';
-import dotenv from 'config/dotenv';
-import { verifyToken } from 'middleware/auth';
-
-dotenv();
+import { verifyToken } from '../../middleware/auth';
 
 const router = express.Router();
 
